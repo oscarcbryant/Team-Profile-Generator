@@ -1,0 +1,46 @@
+#heading {
+
+    height: 100px;
+    background-color: red;
+}
+
+#heading-text {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-size: x-large;
+    color: white;
+
+}
+
+#manager {
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#top {
+    background-color: blue;
+    color: white;
+    width: 200px;
+    padding: 7px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#details {
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+    padding: 7px;
+}
+
+#table {
+    background-color: white;
+    padding: 5px;
+}
+
+h5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: black solid 1px;
+}

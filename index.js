@@ -29,8 +29,6 @@ const promptChoice = () => {
 })
 }
 
-
-
 const promptManager = () => {
     return inquirer.prompt([
     {
@@ -41,17 +39,17 @@ const promptManager = () => {
 
     {   
         type: 'input',
-        name: 'id',
+        name: 'manager-id',
         message: "Whats is your employee ID?",
     },
     {
         type: 'input',
-        name: 'email',
+        name: 'manager-email',
         message: "what is your email address?",
     },
     {
         type: 'input',
-        name: 'number',
+        name: 'manager-number',
         message: "Whats is your office number?",
 
     },
@@ -130,7 +128,57 @@ const generateHTML = (answers) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <div>`
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div id="heading">
+        <header id ="heading-text">My team</header>
+        </div>
+        <main>
+            <div id="card-display">
+                <div id="card">
+                    <div id="top">
+                        <h3>${manager}</h3>
+                        <h3>Manager</h3>
+                    </div>
+                    <div id="details">
+                        <div id = "table">
+                            <h5 id="id">ID: ${manager-id}</h4>
+                            <h5 id="email">Email: ${manager-email}</h4>
+                            <h5 id="office-number">Office number: ${manager-number}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="card">
+                    <div id="top">
+                        <h3>Jack</h3>
+                        <h3>Engineer</h3>
+                    </div>
+                    <div id="details">
+                        <div id = "table">
+                            <h5 id="id">ID: </h4>
+                            <h5 id="email">Email: </h4>
+                            <h5 id="git-hub">GitHub: </h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="card">
+                    <div id="top">
+                        <h3>Peter</h3>
+                        <h3>Intern</h3>
+                    </div>
+                    <div id="details">
+                        <div id = "table">
+                            <h5 id="id">ID: </h4>
+                            <h5 id="email">Email: </h4>
+                            <h5 id="school">School: </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    </html>`
 // <!-- cards -->
 // ${function()}
 //         </div>

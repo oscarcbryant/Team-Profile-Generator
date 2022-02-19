@@ -13,10 +13,16 @@
 
 }
 
-#manager {
+#card-display{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#card{
     width: 200px;
     margin: 20px;
-    border-radius: 5px;
+    box-shadow: 10px 10px 5px 10px lightblue;
+    border-radius: 15%;
 }
 
 #top {
@@ -25,6 +31,8 @@
     width: 200px;
     padding: 7px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
 
 }
 

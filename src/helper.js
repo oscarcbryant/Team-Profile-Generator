@@ -19,52 +19,52 @@ htmlStarter = [`!DOCTYPE html>
     </html>
     `]
 
-    const generateManagerCard = () => {
+    generateManagerCard = (manager) => {
 
     [`<div id="card-display">
             <div id="card">
                 <div id="top">
-                    <h3>${answers.name}</h3>
-                    <h3>Manager</h3>
+                    <h3>${manager.getName()}</h3>
+                    <h3>${manager.getRole()}</h3>
                 </div>
                 <div id="details">
                     <div id = "table">
-                        <h5 id="id">ID: ${id}</h4>
-                        <h5 id="email">Email: ${email}</h4>
-                        <h5 id="office-number">Office number: ${number}</h4>
+                        <h5 id="id">ID: ${manager.getId()}</h4>
+                        <h5 id="email">Email: ${manager.getEmail()}</h4>
+                        <h5 id="office-number">Office number: ${manager.number}</h4>
                     </div>
                 </div>
             </div>`];
         
     },
 
-    const generateEngineerCard = () => {
+    generateEngineerCard = (engineerArray) => {
             [`<div id="card">
                 <div id="top">
-                    <h3>${engineer}</h3>
+                    <h3>${engineerArray.getName()}</h3>
                     <h3>Engineer</h3>
                 </div>
                 <div id="details">
                     <div id = "table">
-                        <h5 id="id">ID: ${id}</h4>
-                        <h5 id="email">Email: ${email}</h4>
-                        <h5 id="git-hub">GitHub: ${github}</h4>
+                        <h5 id="id">ID: ${engineerArray.getId()}</h4>
+                        <h5 id="email">Email: ${engineerArray.getEmail()}</h4>
+                        <h5 id="git-hub">GitHub: ${engineerArray.github}</h4>
                     </div>
                 </div>
             </div>`]
     },
             
-            const generateInternCard = () => {
+    generateInternCard = (internArray) => {
                     [`<div id="card">
                         <div id="top">
-                            <h3>${intern}</h3>
-                            <h3>Intern</h3>
+                            <h3>${internArray.getName()}</h3>
+                            <h3>${internArray.getRole()}</h3>
                         </div>
                         <div id="details">
                             <div id = "table">
-                                <h5 id="id">ID: ${id}</h4>
-                                <h5 id="email">Email: ${email}</h4>
-                                <h5 id="school">School: ${school}</h4>
+                                <h5 id="id">ID: ${internArray.getId()}</h4>
+                                <h5 id="email">Email: ${internArray.getEmail()}</h4>
+                                <h5 id="school">School: ${internArray.school}</h4>
                             </div>
                         </div>
                     </div>

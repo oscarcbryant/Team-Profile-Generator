@@ -61,7 +61,7 @@ const promptManager = () => {
     },
 
     ])
-    .then(answers => data.push(answers))
+    .then(answers => data.push(new Manager(answers.name, answers.id, answers.email, answers.number)))
     .then(() => promptChoice())
 }
 
@@ -91,7 +91,7 @@ const promptEngineer = () => {
    // promptChoice()
 
     ])    
-    .then(answers => data.push(answers))
+    .then(answers => data.push(new Engineer (answers.name, answers.id, answers.email, answers.github)))
     .then(() => promptChoice())
 }
 
@@ -118,15 +118,13 @@ const promptIntern = () => {
         message: "Whats school did your engineer attend?",
     },
     ])
-    .then(answers => data.push(answers))
+    .then(answers => data.push(new Intern (answers.name, answers.id, answers.email, answers.school)))
     .then(() => promptChoice())
 }
 
 
 const generateHTML = (answers) => {
     console.log(answers);
-
-    for (i=0; (generateCards().length); i++)
 
     //[{},{}] loop thru array
     //function return `${data} html`

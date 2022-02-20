@@ -68,17 +68,17 @@ const promptEngineer = () => {
     },
     {   
         type: 'input',
-        name: 'id',
+        name: 'engineer-id',
         message: "Whats is your engineers employee ID?",
     },
     {
         type: 'input',
-        name: 'email',
+        name: 'engineer-email',
         message: "what is your engineers email address?",
     },
     {
         type: 'input',
-        name: 'github',
+        name: 'engineer-github',
         message: "Whats is your engineers github account?",
     },
 
@@ -98,17 +98,17 @@ const promptIntern = () => {
     },
     {   
         type: 'input',
-        name: 'id',
+        name: 'intern-id',
         message: "Whats is your interns employee ID?",
     },
     {
         type: 'input',
-        name: 'email',
+        name: 'intern-email',
         message: "what is your engineers email address?",
     },
     {
         type: 'input',
-        name: 'school',
+        name: 'intern-school',
         message: "Whats school did your engineer attend?",
     },
     ])
@@ -119,6 +119,8 @@ const promptIntern = () => {
 
 const generateHTML = (answers) => {
     console.log(answers);
+
+    //if (promptChoice(choices, "Finish building my team")) 
     //[{},{}] loop thru array
     //function return `${data} html`
     return `<!DOCTYPE html>
@@ -151,27 +153,27 @@ const generateHTML = (answers) => {
                 </div>
                 <div id="card">
                     <div id="top">
-                        <h3>Jack</h3>
+                        <h3>${engineer}</h3>
                         <h3>Engineer</h3>
                     </div>
                     <div id="details">
                         <div id = "table">
-                            <h5 id="id">ID: </h4>
-                            <h5 id="email">Email: </h4>
-                            <h5 id="git-hub">GitHub: </h4>
+                            <h5 id="id">ID: ${engineers-id}</h4>
+                            <h5 id="email">Email: ${engineer-email}</h4>
+                            <h5 id="git-hub">GitHub: ${engineer-github}</h4>
                         </div>
                     </div>
                 </div>
                 <div id="card">
                     <div id="top">
-                        <h3>Peter</h3>
+                        <h3>${intern}</h3>
                         <h3>Intern</h3>
                     </div>
                     <div id="details">
                         <div id = "table">
-                            <h5 id="id">ID: </h4>
-                            <h5 id="email">Email: </h4>
-                            <h5 id="school">School: </h4>
+                            <h5 id="id">ID: ${intern-id}</h4>
+                            <h5 id="email">Email: ${intern-email}</h4>
+                            <h5 id="school">School: ${intern-school}</h4>
                         </div>
                     </div>
                 </div>
@@ -179,14 +181,6 @@ const generateHTML = (answers) => {
         </main>
     </body>
     </html>`
-// <!-- cards -->
-// ${function()}
-//         </div>
-//     </head>
-//     <body>
-        
-//     </body>
-//     </html>`
 }
 
 

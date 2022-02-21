@@ -13,7 +13,7 @@ htmlStarter = [`!DOCTYPE html>
     <div id="heading">
     <header id ="heading-text">My team</header>
     </div>
-    <main>` + generateManagerCard() + generateEngineerCard() + generateInternCard()
+    <main>` ${generateManagerCard()} + ${generateEngineerCard()} + ${generateInternCard()}
     `</main>
     </body>
     </html>
@@ -39,22 +39,29 @@ htmlStarter = [`!DOCTYPE html>
     },
 
     generateEngineerCard = (engineerArray) => {
-            [`<div id="card">
-                <div id="top">
-                    <h3>${engineerArray.getName()}</h3>
-                    <h3>Engineer</h3>
-                </div>
-                <div id="details">
-                    <div id = "table">
-                        <h5 id="id">ID: ${engineerArray.getId()}</h4>
-                        <h5 id="email">Email: ${engineerArray.getEmail()}</h4>
-                        <h5 id="git-hub">GitHub: ${engineerArray.github}</h4>
+
+        for (let i=0; i < engineerArray.length; i++) 
+        {
+            [   `<div id="card">
+                    <div id="top">
+                        <h3>${engineerArray.getName()}</h3>
+                        <h3>Engineer</h3>
                     </div>
-                </div>
-            </div>`]
+                    <div id="details">
+                        <div id = "table">
+                            <h5 id="id">ID: ${engineerArray.getId()}</h4>
+                            <h5 id="email">Email: ${engineerArray.getEmail()}</h4>
+                            <h5 id="git-hub">GitHub: ${engineerArray.github}</h4>
+                        </div>
+                    </div>
+                </div>`
+            ]}
     },
             
     generateInternCard = (internArray) => {
+
+        for (let i=0; i < internArray.length; i++) 
+         {
                     [`<div id="card">
                         <div id="top">
                             <h3>${internArray.getName()}</h3>
@@ -69,7 +76,7 @@ htmlStarter = [`!DOCTYPE html>
                         </div>
                     </div>
                 </div>`
-            ]
-
-            }
+                    ]
+        }
+    }
 }

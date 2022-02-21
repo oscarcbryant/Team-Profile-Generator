@@ -68,27 +68,27 @@ let manager;
     }
             
     let generateInternCard = (internArray) => {
-
-
+        let internString = "";
         for (let i=0; i < internArray.length; i++) 
          {
-                    `<div id="card">
+
+    internString+=    `<div id="card">
                         <div id="top">
-                            <h3>${internArray.getName()}</h3>
-                            <h3>${internArray.getRole()}</h3>
+                            <h3>${internArray[i].getName()}</h3>
+                            <h3>${internArray[i].getRole()}</h3>
                         </div>
                         <div id="details">
                             <div id = "table">
-                                <h5 id="id">ID: ${internArray.getId()}</h4>
-                                <h5 id="email">Email: ${internArray.getEmail()}</h4>
-                                <h5 id="school">School: ${internArray.school}</h4>
+                                <h5 id="id">ID: ${internArray[i].getId()}</h4>
+                                <h5 id="email">Email: ${internArray[i].getEmail()}</h4>
+                                <h5 id="school">School: ${internArray[i].school}</h4>
                             </div>
                         </div>
                     </div>
                 </div>`
                     
         }
-    
+    return internString;
     }
 
     htmlStarter = `!DOCTYPE html>

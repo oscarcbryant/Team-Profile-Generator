@@ -4,7 +4,7 @@ const fs = require('fs');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
-const Cards = require('./src/helper');
+const generateCards = require('./src/helper');
 // const employee = require('./employee.js');
 
 let data = [];
@@ -27,8 +27,8 @@ const promptChoice = () => {
           promptIntern()
           break;
         case "Finish building my team":
-           generateHTML(data)
-           //.then((html) => fs.writeFileSync())
+           let htmlString = generateHTML(data)
+           fs.writeFileSync('./dist/index.html', htmlString)
           break;
 
       }
@@ -129,6 +129,7 @@ const generateHTML = (answers) => {
     //[{},{}] loop thru array
     //function return `${data} html`
     return generateCards(answers);
+    
 }
 
 

@@ -19,6 +19,8 @@ We applied CSS and HTML linking so rendered page had styling features applied.
 
 chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/bcef14de-65b6-40c2-yd57-9aca9b092931
 
+![alt tag](Walkthrough/TeamProfileWalkthrough.gif)
+
 
 ## Lessons
 We covered alot of ground in the creation of this application. 
@@ -30,6 +32,8 @@ We utilised Jest dependencies so proper testing could be completed on Employee d
 Please note, all tests returned successfully.
 
 ![alt tag](Media/htmlStarter.jpg)
+
+Image here shows the html starter code we wrote to produce our web page after running application. 
 
 ## Contributors
 

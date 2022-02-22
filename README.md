@@ -14,6 +14,13 @@ The application also uses Jest to run tests against the quality of input (method
 We used inquirer to prompt the questionaire within the terminal.
 We applied CSS and HTML linking so rendered page had styling features applied.
 
+![Alt Text](chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/bcef14de-65b6-40c2-yd57-9aca9b092931)
+
+## Link to video Walkthrough
+
+
+
+
 ## Lessons
 We covered alot of ground in the creation of this application. 
 We learnt how to use require to link files. 

@@ -35,9 +35,9 @@ let manager;
                 </div>
                 <div id="details">
                     <div id = "table">
-                        <h5 id="id">ID: ${manager.getId()}</h4>
-                        <h5 id="email">Email: ${manager.getEmail()}</h4>
-                        <h5 id="office-number">Office number: ${manager.number}</h4>
+                        <h5 id="id">ID: ${manager.getId()}</h5>
+                        <a href="mailto:${manager.getEmail()}"><h5 id="email">Email:${manager.getEmail()}</h5></a>
+                        <h5 id="office-number">Office number: ${manager.number}</h5>
                     </div>
                 </div>
             </div>`
@@ -57,9 +57,9 @@ let manager;
                     </div>
                     <div id="details">
                         <div id = "table">
-                            <h5 id="id">ID: ${engineerArray[i].getId()}</h4>
-                            <h5 id="email">Email: ${engineerArray[i].getEmail()}</h4>
-                            <h5 id="git-hub">GitHub: ${engineerArray[i].github}</h4>
+                            <h5 id="id">ID: ${engineerArray[i].getId()}</h5>
+                            <a href="mailto:${engineerArray[i].getEmail()}"><h5 id="email">Email: ${engineerArray[i].getEmail()}</h5></a>
+                            <h5 id="git-hub">GitHub: ${engineerArray[i].getGitHub()}</h5>
                         </div>
                     </div>
                 </div>`
@@ -79,9 +79,9 @@ let manager;
                         </div>
                         <div id="details">
                             <div id = "table">
-                                <h5 id="id">ID: ${internArray[i].getId()}</h4>
-                                <h5 id="email">Email: ${internArray[i].getEmail()}</h4>
-                                <h5 id="school">School: ${internArray[i].school}</h4>
+                                <h5 id="id">ID: ${internArray[i].getId()}</h5>
+                                <a href="mailto: ${internArray[i].getEmail()}"><h5 id="email">Email: ${internArray[i].getEmail()}</h5></a>
+                                <h5 id="school">School: ${internArray[i].school}</h5>
                             </div>
                         </div>
                     </div>

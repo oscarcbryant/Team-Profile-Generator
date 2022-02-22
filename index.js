@@ -1,15 +1,14 @@
-// TODO: Include packages needed for this application
+// Packages needed for the application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const generateCards = require('./src/helper');
-// const employee = require('./employee.js');
 
 let data = [];
 
-// Below is the array of questions for user input
+// Questions we are asking from the terminal. 
 const promptChoice = () => {
     return inquirer.prompt ([
     {
@@ -34,7 +33,7 @@ const promptChoice = () => {
       }
 })
 }
-
+// Prompting Manager questions
 const promptManager = () => {
     return inquirer.prompt([
     {
@@ -65,6 +64,7 @@ const promptManager = () => {
     .then(() => promptChoice())
 }
 
+// Prompting engineer questions
 const promptEngineer = () => {
     return inquirer.prompt([
     {
@@ -88,13 +88,13 @@ const promptEngineer = () => {
         message: "Whats is your engineers github account?",
     },
 
-   // promptChoice()
 
     ])    
     .then(answers => data.push(new Engineer (answers.name, answers.id, answers.email, answers.github)))
     .then(() => promptChoice())
 }
 
+// Prompting intern questions
 const promptIntern = () => {
     return inquirer.prompt([
     {
@@ -122,26 +122,21 @@ const promptIntern = () => {
     .then(() => promptChoice())
 }
 
-
+// function that generates out HTML file, using the contents from (../helper.js)
 const generateHTML = (answers) => {
     console.log(answers);
 
-    //[{},{}] loop thru array
-    //function return `${data} html`
+ 
     return generateCards(answers);
     
 }
 
 
-// Function to call HTML
+
 const init = () => {
     promptManager()
     .then((answers) => {
-        // console.log(answers)
-        // fs.writeFileSync()
     })
 
 }
-// Function call to initialize app
 init();
-// promptManager();

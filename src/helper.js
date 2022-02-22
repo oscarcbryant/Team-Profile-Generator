@@ -24,7 +24,7 @@ let manager;
 
     }
 
-
+// employee card generators below, linking back with our generateHTML() function
    let generateManagerCard = (manager) => {
 
   return  `<div id="card-display">

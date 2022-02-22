@@ -29,6 +29,8 @@ We deployed a helper file to house the html language that dynamically passed thr
 We utilised Jest dependencies so proper testing could be completed on Employee data methods and objects. 
 Please note, all tests returned successfully.
 
+![alt tag](Media/htmlStarter.jpg)
+
 ## Contributors
 
 The main contributor of this code was oscarcbryant

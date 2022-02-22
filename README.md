@@ -14,7 +14,6 @@ The application also uses Jest to run tests against the quality of input (method
 We used inquirer to prompt the questionaire within the terminal.
 We applied CSS and HTML linking so rendered page had styling features applied.
 
-![Alt Text](Team-Profile-Generator-Walkthough.webm)
 
 ## Link to video Walkthrough
 
